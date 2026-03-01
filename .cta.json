@@ -1,0 +1,22 @@
+{
+  "projectName": "cinetrack",
+  "mode": "file-router",
+  "typescript": true,
+  "packageManager": "bun",
+  "includeExamples": false,
+  "tailwind": true,
+  "addOnOptions": {},
+  "envVarValues": {},
+  "git": false,
+  "routerOnly": false,
+  "version": 1,
+  "framework": "react-cra",
+  "chosenAddOns": [
+    "eslint",
+    "netlify",
+    "t3env",
+    "tanstack-query",
+    "compiler",
+    "form"
+  ]
+}
