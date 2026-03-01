@@ -12,7 +12,8 @@
     "test": "vitest run",
     "lint": "eslint",
     "format": "prettier --check .",
-    "check": "prettier --write . && eslint --fix"
+    "check": "prettier --write . && eslint --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "@t3-oss/env-core": "^0.13.8",
@@ -34,6 +35,8 @@
     "zod": "^4.1.11"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
     "@netlify/vite-plugin-tanstack-start": "^1.2.3",
     "@tanstack/devtools-vite": "^0.3.11",
     "@tanstack/eslint-config": "^0.3.0",
@@ -44,6 +47,7 @@
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.4",
     "babel-plugin-react-compiler": "^1.0.0",
+    "husky": "^9.1.7",
     "jsdom": "^27.0.0",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
