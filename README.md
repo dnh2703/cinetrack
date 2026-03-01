@@ -1,6 +1,6 @@
 # CineTrack
 
-CineTrack is Minimal movie discovery app powered by the OMDb API.
+Minimal movie discovery app powered by the OMDb API.
 
 ## Tech stack
 
@@ -47,6 +47,25 @@ App runs on `http://localhost:3000`.
 - `npm run lint`: run ESLint
 - `npm run format`: check formatting with Prettier
 - `npm run check`: auto-fix Prettier + ESLint issues
+- `npm run prepare`: install Husky Git hooks
+
+## Commit message convention
+
+This repository uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+Example:
+
+```text
+chore(ci): add lint and build workflows
+```
+
+`commit-msg` is enforced locally via Husky + commitlint.
+
+## CI checks
+
+GitHub Actions runs these required checks on pull requests and pushes to `main`:
+
+- `lint`: `npm run lint`
+- `build`: `npm run build`
 
 ## Deployment
 
