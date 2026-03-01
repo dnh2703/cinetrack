@@ -11,13 +11,17 @@ Minimal movie discovery app powered by the OMDb API.
 
 ## Prerequisites
 
-- Node.js (LTS)
-- npm
+- Bun (recommended)
+- Node.js (LTS) + npm (alternative)
 - OMDb API key
 
 ## Getting started
 
 1. Install dependencies:
+   ```bash
+   bun install
+   ```
+   Alternative:
    ```bash
    npm install
    ```
@@ -27,6 +31,10 @@ Minimal movie discovery app powered by the OMDb API.
    ```
 3. Set `VITE_OMDBAPI_API_KEY` in `.env`.
 4. Start development server:
+   ```bash
+   bun run dev
+   ```
+   Alternative:
    ```bash
    npm run dev
    ```
@@ -40,14 +48,15 @@ App runs on `http://localhost:3000`.
 
 ## Scripts
 
-- `npm run dev`: run local dev server
-- `npm run build`: production build
-- `npm run preview`: preview built app
-- `npm run test`: run tests
-- `npm run lint`: run ESLint
-- `npm run format`: check formatting with Prettier
-- `npm run check`: auto-fix Prettier + ESLint issues
-- `npm run prepare`: install Husky Git hooks
+- `bun run dev`: run local dev server
+- `bun run build`: production build
+- `bun run preview`: preview built app
+- `bun run test`: run tests
+- `bun run lint`: run ESLint
+- `bun run format`: check formatting with Prettier
+- `bun run check`: auto-fix Prettier + ESLint issues
+- `bun run prepare`: install Husky Git hooks
+- `npm run <script>` equivalents are also available.
 
 ## Commit message convention
 
@@ -64,8 +73,8 @@ chore(ci): add lint and build workflows
 
 GitHub Actions runs these required checks on pull requests and pushes to `main`:
 
-- `lint`: `npm run lint`
-- `build`: `npm run build`
+- `lint`: `bun run lint`
+- `build`: `bun run build`
 
 ## Deployment
 
